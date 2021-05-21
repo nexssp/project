@@ -1,6 +1,6 @@
 module.exports = (cmd, args) => {
   const _log = require('@nexssp/logdebug')
-  const path = require('path')
+  const _path = require('path')
   const { bold, green } = require('@nexssp/ansi')
   const { existsSync, writeFileSync } = require('fs')
   const { NEXSS_PROJECTS_DB } = require('../../config/project')
@@ -37,7 +37,7 @@ module.exports = (cmd, args) => {
       type: 'input',
       name: 'projectName',
       message: 'Enter project name',
-      default: path.basename(process.cwd()),
+      default: _path.basename(process.cwd()),
     })
   }
   if (cliArgs.description) {
