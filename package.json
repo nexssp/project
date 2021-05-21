@@ -1,7 +1,7 @@
 {
   "name": "@nexssp/project",
   "description": "Projects for Nexss Programmer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://nexss.com",
   "main": "src/project.js",
   "bin": {
@@ -9,7 +9,8 @@
   },
   "files": [
     "src/**/*",
-    "bin/*"
+    "bin/*",
+    "aliases.json"
   ],
   "scripts": {
     "test1": "node ./bin/nexssp-project.js",
