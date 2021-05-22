@@ -2,7 +2,7 @@ module.exports = (_) => {
   const { bold, yellow, green, grey } = require('@nexssp/ansi')
   const { config1 } = require('../../config/config')
   let nexssConfig = config1.load()
-
+  const _log = require('@nexssp/logdebug')
   if (nexssConfig) {
     console.log(bold(yellow('Current Project: ')))
     const { files } = nexssConfig
@@ -27,8 +27,8 @@ module.exports = (_) => {
     }
     console.log(`${grey("To display config 'nexss config get'")}`)
   } else {
-    log.warn(`This is not ${bold('Nexss PROGRAMMER project')}`)
-    log.info(
+    _log.warn(`This is not ${bold('Nexss PROGRAMMER project')}`)
+    _log.info(
       `Create new project:
       New folder: ${bold('nexss project new MyProjectName')} OR ${bold('nexss p n MyProjectName')}
       Current folder: ${bold('nexss project new .')} OR ${bold('nexss p n .')}
