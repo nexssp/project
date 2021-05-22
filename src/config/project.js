@@ -6,6 +6,6 @@ try {
   _fs.mkdirSync(dotNexssFolder, { recursive: true })
 } catch (error) {}
 
-const NEXSS_PROJECTS_DB = `${dotNexssFolder}/projects_db.json`
+const NEXSS_PROJECTS_DB = process.env.NEXSS_PROJECTS_DB || `${dotNexssFolder}/projects_db.json`
 
 module.exports = { NEXSS_PROJECTS_DB }
