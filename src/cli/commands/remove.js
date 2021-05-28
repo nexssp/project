@@ -6,8 +6,7 @@ module.exports = (cmd, args) => {
   const { NEXSS_PROJECTS_DB } = require('../../config/project')
   const { config1 } = require('../../config/config')
   const NEXSS_PROJECT_CONFIG_PATH = config1.getPath()
-  const cliArgs = require('minimist')(process.argv.slice(2))
-  const projectToDelete = cliArgs._[1]
+  const projectToDelete = args[0]
 
   if (!projectToDelete) {
     _log.error(bold('Enter project to delete. eg. nexss p <projectToDelete>'))
@@ -16,7 +15,7 @@ module.exports = (cmd, args) => {
   const projects = require(NEXSS_PROJECTS_DB)
   if (!projects[projectToDelete]) {
     _log.error(`project ${bold(projectToDelete)} does not exist in ${bold(NEXSS_PROJECTS_DB)}`)
-   return true
+    return true
   }
 
   delete projects[projectToDelete]

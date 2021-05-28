@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = (cmd, args) => {
   const _log = require('@nexssp/logdebug')
   const { bold, green, yellow } = require('@nexssp/ansi')
   const _fs = require('fs')
