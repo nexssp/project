@@ -9,9 +9,14 @@ module.exports = (cmd, args) => {
 
   let paramName = args[0]
 
+  if (`${paramName}`.length < 3) {
+    _log.error(`Project name needs to be at least 3 characters.`)
+    process.exit(1)
+  }
+
   if (!paramName) {
-    _log.warn(`Enter project name eg. nexss project new project-name-here.`)
-    process.exit(0)
+    _log.error(`Enter project name eg. nexss project new project-name-here.`)
+    process.exit(1)
   }
   let projectPath, dotDir
   if (paramName === '.') {
