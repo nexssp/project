@@ -1,6 +1,28 @@
 # @nexssp/project
 
-Nexss Programmer projects tool. This tool is a cli tool and can be used separately but also withing Nexss Programmer. It allows you to keep db of your projects (not only Nexss Programmer) so you can find them easyly. It also create new Nexss Programmer's Project, display info about them etc.
+## NEW: Project types
+
+Start hot reloading environment and start with different project types quickly:
+
+For now supported project types: **vue2**. Soon: **react**, **preact**, **vue3**
+
+```sh
+nexssp-project vue2 project-name # as separate command
+nexss p vue2 project-name # for nexss programmer
+nexss p vue2 project-name --install # use --install to install automatically the packages.
+
+# TODO: add tag ability (for different versions)
+# TODO: add change of project name in the package.json file
+# TODO: remove .git folder from the created project.
+```
+
+## Note
+
+Nexss Programmer projects tool. This tool is a cli tool and can be used separately but also within Nexss Programmer.
+
+You can create new projects for Nexss Programmer, but also for famous other frameworks eg. **vue**.
+
+It allows you to keep db of your projects (not only Nexss Programmer) so you can find them easyly. It also create new Nexss Programmer's Project, display info about them etc.
 
 You can add to the database any folder really. And then you can search for them in the by easy command `nexssp-project search some keywords` or in the Nexss Programmer ..`nexss p search ...`
 
