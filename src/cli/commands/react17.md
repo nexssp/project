@@ -1,14 +1,14 @@
-# Vue2
+# react17
 
-Creates new vue2 project with dev hot reloading
+Creates new react17 project with dev hot reloading
 
 ## Examples
 
 ```sh
-nexss p vue2 help # this screen
-nexss p vue2 myproject
-nexss p vue2 myproject --install # will automatically install packages
-nexss p vue2 . --install # in the current dir
+nexss p react17 help # this screen
+nexss p react17 myproject
+nexss p react17 myproject --install # will automatically install packages
+nexss p react17 . --install # in the current dir
 ```
 
 ## Install
