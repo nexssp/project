@@ -1,14 +1,14 @@
-# react17
+# preact
 
-Create a new react17 project with dev hot reloading.
+Create a new preact project with dev hot reloading.
 
 ## Examples
 
 ```sh
-nexss p react17 help # this screen
-nexss p react17 myproject
-nexss p react17 myproject --install # will automatically install packages
-nexss p react17 . --install # in the current dir
+nexss p preact help # this screen
+nexss p preact myproject
+nexss p preact myproject --install # will automatically install packages
+nexss p preact . --install # in the current dir
 ```
 
 ## Install

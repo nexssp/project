@@ -6,7 +6,7 @@ module.exports = (cmd, args) => {
   //   cmd = 'vue2'
   const projectName = args[0]
   const newGitProject = nexssGitProject({
-    projectType: cmd, //react17
+    projectType: cmd, //preact
     projectName,
     repoAddress: projectType.repo,
     // gitTag, TODO: to implement

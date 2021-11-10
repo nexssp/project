@@ -1,6 +1,6 @@
 # Vue2
 
-Creates new vue2 project with dev hot reloading
+Create a new vue2 project with dev hot reloading.
 
 ## Examples
 

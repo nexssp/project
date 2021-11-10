@@ -1,6 +1,6 @@
 # Attach
 
-Attach a project (and adds to the global list)
+Attach a project (and adds to the global list).
 
 ## Examples
 
