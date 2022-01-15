@@ -1,5 +1,5 @@
 module.exports = (_) => {
-  const { bold, yellow, green, grey } = require('@nexssp/ansi')
+  const { bold, yellow, green, gray } = require('@nexssp/ansi')
   const { config1 } = require('../../config/config')
   let nexssConfig = config1.load()
   const _log = require('@nexssp/logdebug')
@@ -8,7 +8,7 @@ module.exports = (_) => {
     const { files } = nexssConfig
     const { sequences } = nexssConfig
     const pInfo = () =>
-      `\nFiles: ${yellow(files && files.length)} ${grey('nexss f add myfile.php')}`
+      `\nFiles: ${yellow(files && files.length)} ${gray('nexss f add myfile.php')}`
     // Config file: ${util.inspect(nexssConfig)}
 
     console.log(`Name: ${bold(green(nexssConfig.name))}`)
@@ -25,7 +25,7 @@ module.exports = (_) => {
         console.table(sequences[element])
       })
     }
-    console.log(`${grey("To display config 'nexss config get'")}`)
+    console.log(`${gray("To display config 'nexss config get'")}`)
   } else {
     _log.warn(`This is not ${bold('Nexss PROGRAMMER project')}`)
     _log.info(
